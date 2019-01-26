@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Shweta's Investment Tracker</title>
+        <h1>Total Investments</h1>
+    </head>
+    <body>
+        <div>
+            <strong>List of Investments</strong>
+        </div>
+        <table style="width:100%">
+            <tr>
+                <th>Scheme Name</th>
+                <th>Total Amount Invested</th>
+                <th>Latest Value</th>
+            </tr>
+            {% for each_investment in t1 %}
+            <tr>
+                <td> {{ each_investment.scheme__scheme_name }} </td>
+                <td> {{ each_investment.total_amount__sum }} </td>
+                <td> {{  }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>

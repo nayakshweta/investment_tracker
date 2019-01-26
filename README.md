@@ -1,0 +1,1 @@
+Django Investment Tracker app
